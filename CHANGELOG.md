@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2
+- Renamed "Belt" to **Sector** everywhere the player sees it: the button now reads **Warp to sector**, and status and log messages say sector.
+
 ## 0.1.1
 - Version bump to verify the MSCore updater. No gameplay changes.
 
