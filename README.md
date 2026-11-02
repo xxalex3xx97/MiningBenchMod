@@ -25,7 +25,7 @@
 - **Resource queue** - a list of up to 20 rows (resource + amount). Ships mine them in order and can repeat the list. Amount `0` = unlimited.
 - **Smart docking** - docks when cargo is full or fuel is low, unloads, refuels, then resumes where it left off. A busy dock shows **Waiting for dock** and retries automatically.
 - **Fuel handling** - minimum/maximum fuel rules and a refuel dock.
-- **Belt travel** - nearest rock first; only warps to another sector when nothing is in range. If no sector has ore, the ship goes home and idles instead of looping forever.
+- **Sector Travel** - nearest rock first; only warps to another sector when nothing is in range. If no sector has ore, the ship goes home and idles instead of looping forever.
 - **Dock time limit** - stops a ship that sits docked too long and shows an error.
 - **Status and log** - live status per ship (what it is mining, ETA, cargo, speed) plus a log tab.
 - **Quick actions** - Dock, Undock, Refuel, Unload and an **Emergency stop** for any ship.

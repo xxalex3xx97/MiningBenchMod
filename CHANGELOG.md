@@ -8,6 +8,6 @@
 - Automatic per-ship mining loop: mine, dock, unload, refuel, repeat.
 - Resource queue (20 rows) with repeat and unlimited amounts.
 - Dock waiting with retries, dock time limit, fuel rules.
-- Nearest-rock-first mining; sector warp only when nothing is in range; goes home and idles when no sector has ore.
+- Sector Travel: nearest-rock-first mining; sector warp only when nothing is in range; goes home and idles when no sector has ore.
 - Per-ship settings with defaults, status panel and log tab.
 - Installs and updates through MSCore Manager.
