@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3
+- Dock lists show your renamed docks (industrial and station docks) and no longer list the docks on ships. Names refresh while the window is open.
+- Ship picker: one click selects a ship, a fleet or all ships. The tick boxes are gone.
+- Operation tab: new **Warp range** (default 50 km): a rock farther than this is not flown to, the ship warps to another sector instead. Radius, mining distance and max radius now show their unit and default to 50 km, 50 m and 50 km.
+- Operation tab: hover any field or check for an explanation.
+- Safety checks after game updates (the mod switches a feature off instead of misbehaving) and performance fixes.
+
 ## 0.1.2
 - Renamed "Belt" to **Sector** everywhere the player sees it: the button now reads **Warp to sector**, and status and log messages say sector.
 
