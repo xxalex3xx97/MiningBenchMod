@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.5
+- Ship tab: the refuel and unload dock lists no longer stop at 5 docks. Add as many as you need; each list grows with your docks.
+- Ship tab: removed the extra "Refuel dock" field at the top (the Refuel docks list below replaces it).
+- Items tab: the resource queue is no longer limited to 20 rows.
+- Log tab: no longer limited to 60 lines.
+
 ## 0.1.4
 - Ship tab: unload docks are now chosen per ore. Each enabled ore has its own card where you add up to 5 docks; the ship uses the first free one. An ore with no dock is not unloaded and the ship shows a yellow warning.
 - Ship tab: refuel now also takes a list of docks (first free one wins), next to the single Refuel dock.
