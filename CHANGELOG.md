@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+- Ship tab: unload docks are now chosen per ore. Each enabled ore has its own card where you add up to 5 docks; the ship uses the first free one. An ore with no dock is not unloaded and the ship shows a yellow warning.
+- Ship tab: refuel now also takes a list of docks (first free one wins), next to the single Refuel dock.
+- Dock cards show the ore or fuel icons, and the ore cards start with Water Ice.
+- The single Unload dock selector is gone: add docks to the ore cards again after updating.
+
 ## 0.1.3
 - Dock lists show your renamed docks (industrial and station docks) and no longer list the docks on ships. Names refresh while the window is open.
 - Ship picker: one click selects a ship, a fleet or all ships. The tick boxes are gone.
