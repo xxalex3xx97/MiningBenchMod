@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.6
+- Fixed the FPS that kept dropping the longer you played with the mod loaded.
+- Miners now find ores that have no rock loaded near you (for example silica): the ship loads the area around the nearest rock and goes mining there. Works for large and small asteroids.
+- The game no longer crashes when you close it.
+- Rock searching is shared between all ships and refreshes once a minute instead of every few seconds.
+
 ## 0.1.5
 - Ship tab: the refuel and unload dock lists no longer stop at 5 docks. Add as many as you need; each list grows with your docks.
 - Ship tab: removed the extra "Refuel dock" field at the top (the Refuel docks list below replaces it).
