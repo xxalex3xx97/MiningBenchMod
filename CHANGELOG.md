@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0
+- New **Collect ore** button (Actions box): the ship picks up all the floating ore around it, nearest first, without mining. The button shows how many floating ores there are ("Collect 9700 ores"). When the cargo fills up it docks, unloads and comes back to continue.
+- Miners no longer leave floating ore behind: a ship whose cargo is full (including a partly filled last stack) goes to unload instead of mining on, and collects leftover ore before leaving a rock.
+- Much less lag: rock searching is cached, and the floating-ore scan runs once a minute for the whole fleet.
+- **Unload** now visits every unload dock it needs: each ore goes to its own dock, one dock after another, until the cargo is empty. The per-ore unload switches are gone: an ore is unloaded when it has an unload dock. "Nothing to unload" and "no unload dock for <ore>" are shown clearly.
+- New **dock control**: ships no longer fight over docks. Waiting ships go to a line near the dock and are called in one by one: fullest cargo first, then low fuel, and anyone waiting 10 minutes goes first. A ship with cargo that needs fuel unloads first. Parked, empty or full ships leave a dock when another ship is waiting. A full dock is skipped and the next dock is tried.
+- New **Docks** tab: every dock with its status, who is using it, and who is waiting.
+- The wait text now says what the ship waits for: "Waiting for Unload Silica 1 (2:09 occupied by Cleaner)". Docks and ships are shown by name.
+- A ship that is docked now undocks first before flying to another dock (it used to sit still), and a ship that really cannot move shows a red message instead of staying silent.
+
 ## 0.1.6
 - Fixed the FPS that kept dropping the longer you played with the mod loaded.
 - Miners now find ores that have no rock loaded near you (for example silica): the ship loads the area around the nearest rock and goes mining there. Works for large and small asteroids.
