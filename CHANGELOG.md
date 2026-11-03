@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+- Far trips are faster: when a ship has to fly more than a set distance to a dock (new **Warp trip distance (km)** setting in the Operation tab, default 5), it warps most of the way if it has fuel, then docks. Docks in another sector are still reached by autopilot.
+- A slow ship no longer gives up on a dock trip while it keeps getting closer: the dock timeout restarts each time the ship gets 500 m nearer.
+- Fixed an error when opening the Mining Unit window (F4), including the window failing to open after a long play session.
+
 ## 0.2.0
 - New **Collect ore** button (Actions box): the ship picks up all the floating ore around it, nearest first, without mining. The button shows how many floating ores there are ("Collect 9700 ores"). When the cargo fills up it docks, unloads and comes back to continue.
 - Miners no longer leave floating ore behind: a ship whose cargo is full (including a partly filled last stack) goes to unload instead of mining on, and collects leftover ore before leaving a rock.
