@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.2
+- Miners no longer get stuck mining a rock that gives no ore: a ship now gives up after 30 s without ore, collects what is floating, and moves on. A rock that gives nothing three times is skipped, and the ship stops with a clear message if no rock is left.
+- Miners stop at 90% cargo instead of 100% and go to unload.
+- Fleeing: a miner now flees to the dock when an enemy targets it, not only after it is hit. New setting `flee_on_target` in the config file (default on).
+- A **combat log** (MiningCombat.txt) records who attacked a ship, hull drops and ship losses.
+- Destroyed ships are removed from the ship list and controls; their log stays in the Log tab (All ships) marked "(destroyed)".
+- Ships no longer wait forever: a failed or looping dock retry, a rock that keeps vanishing, or a 15-minute wait for a dock now stops the ship with a message.
+- Settings are checked: values outside the allowed range are rejected in the Operation tab and clamped in the config file. Refuel amount can no longer be set below its threshold.
+- Fixed the mod switching itself off ("safe mode") and stopping all miners while the Collect button was running.
+
 ## 0.2.1
 - Far trips are faster: when a ship has to fly more than a set distance to a dock (new **Warp trip distance (km)** setting in the Operation tab, default 5), it warps most of the way if it has fuel, then docks. Docks in another sector are still reached by autopilot.
 - A slow ship no longer gives up on a dock trip while it keeps getting closer: the dock timeout restarts each time the ship gets 500 m nearer.
