@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.3
+- Miners keep mining until the rock is gone or cargo is nearly full; a rock that gives no ore is no longer re-picked in a loop.
+- Smarter flying: ships check the path for rocks, steer around them with one waypoint, and slow down only for the last 500 m. Settings `path_clearance_m` and `bubble_clearance_m` (config file).
+- All our flights longer than the warp trip distance now warp (same system), including cleaner sweeps. Cleaner sweeps skip ore in other sectors and no longer get stuck on the return warp.
+- Faster start: a rock registry is built from the save and cached to disk (MiningRegistryCache.bin), so restarts load in seconds.
+- Power: a ship that loses power (empty reactor) goes to refuel; refuel no longer forces an unload below 90% cargo. Far enemies that target a ship no longer make it flee: new setting `flee_target_range_km` (default 5).
+- Safer: F4 toggle closes safely, a freeze watchdog writes MiningFreeze.txt, new debug commands for modders.
+
 ## 0.2.2
 - Miners no longer get stuck mining a rock that gives no ore: a ship now gives up after 30 s without ore, collects what is floating, and moves on. A rock that gives nothing three times is skipped, and the ship stops with a clear message if no rock is left.
 - Miners stop at 90% cargo instead of 100% and go to unload.
