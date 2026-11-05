@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.5
+- New Docks tab in the Mining Unit window (F4): one card per dock with a status icon, who uses it, what for, and how long.
+- Each dock lists up to 3 waiting ships, then "+n waiting". Every waiting ship shows why it waits: zz (waiting), cargo % (green/yellow/red), fuel low, or waited too long, plus whether it is flying to the dock or holding near it.
+- A "?" button explains every icon and colour.
+- Columns wrap long names instead of overlapping.
 ## 0.2.4
 - Emergency Stop in single-ship mode now stops only the selected ship (All ships mode still stops everyone).
 - A ship that keeps failing to reach a rock now gives up after a few tries instead of retrying forever.
