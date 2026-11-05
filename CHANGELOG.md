@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.4
+- Emergency Stop in single-ship mode now stops only the selected ship (All ships mode still stops everyone).
+- A ship that keeps failing to reach a rock now gives up after a few tries instead of retrying forever.
+- When a flight is still blocked right after a detour, the ship skips that rock and picks another.
+- The collision brake is less touchy under load, and blocked-path strikes only count when they happen back to back.
+- The Mining Unit window (F4) can no longer get stuck unable to reopen after a close.
+
 ## 0.2.3
 - Miners keep mining until the rock is gone or cargo is nearly full; a rock that gives no ore is no longer re-picked in a loop.
 - Smarter flying: ships check the path for rocks, steer around them with one waypoint, and slow down only for the last 500 m. Settings `path_clearance_m` and `bubble_clearance_m` (config file).
