@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.7
+- Fixed: the game could freeze or crash when you loaded a save from the main menu with the mod installed. The mod now recognises a new game world and drops what it knew about the old one, before it reads anything.
+- Warping no longer makes the mod forget the rocks: only a real world load (menu, load a save) does. After a load it picks up again within a few seconds.
+- A short failed read of the player no longer counts as "world gone": it takes about a second of failures in a row.
+- After a rare internal fault the mod recovers in seconds instead of staying blind for up to 10 minutes.
+- Tested in game (2026-11-08): menu to load a save several times, warping with a mining ship, and a long session.
 ## 0.2.6
 - New Mining Unit model: a bench with two angled monitors, an AI screen on the left and a rock on the right, in the game's white and orange look.
 - Includes the Mining Unit block and its research unlock, so it works on a fresh install.
