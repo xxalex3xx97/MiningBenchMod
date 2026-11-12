@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.14
+- Fleeing is fixed: a ship that is attacked now really leaves. It warps away to a safe spot outside the base, waits there, then queues for a dock and docks.
+- Losing shields now makes a ship flee, not only losing hull.
+- Fleeing no longer cancels itself on repeat hits, and works with an empty cargo and with any dock.
+- If the warp cannot start under fire, the ship uses an instant warp instead of crawling to the dock.
+
 ## 0.2.7
 - Fixed: the game could freeze or crash when you loaded a save from the main menu with the mod installed. The mod now recognises a new game world and drops what it knew about the old one, before it reads anything.
 - Warping no longer makes the mod forget the rocks: only a real world load (menu, load a save) does. After a load it picks up again within a few seconds.
