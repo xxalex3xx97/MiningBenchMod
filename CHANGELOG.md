@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.16
+
+- Fixed: the game could crash when loading a save after the latest game update. The Mining Unit block and research data was rebuilt for the new game version, and the research card icon shows again.
+
 ## 0.2.15
 
 - Fixed: the Mining Unit was missing from the research tree and could not be placed on a ship. The research, block and model files were left out of the 0.2.7 to 0.2.14 downloads and are included again.
