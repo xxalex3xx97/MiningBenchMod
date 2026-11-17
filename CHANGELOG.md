@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.17
+
+- Works with the new game build again: a far-away mining ship no longer stops with "ship actor unreadable".
+- Mining ships far from you now load only their own sector chunk to stay readable, instead of a larger area.
+
 ## 0.2.16
 
 - Fixed: the game could crash when loading a save after the latest game update. The Mining Unit block and research data was rebuilt for the new game version, and the research card icon shows again.
