@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.18
+
+- Fixed: ships being destroyed for no visible reason. Two ships could pick the same rock and keep ramming each other. A rock is now taken by one ship at a time.
+- New safety net: when a ship takes hull or shield damage with no attacker, all other mining ships stop, the hit ship flies to a dock, and 10 seconds later the others resume what they were doing. After three such stops in 5 minutes it falls back to the normal flee.
+- Fixed: ships far from you stay readable on the latest game update, and a ship waiting in a far sector no longer stalls.
+
 ## 0.2.17
 
 - Works with the new game build again: a far-away mining ship no longer stops with "ship actor unreadable".
