@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.19
+
+- Needs MSCore 0.8.7: ships far from you are now kept loaded by MSCore, so a game update that moves its internals no longer breaks far mining inside this mod. With an older MSCore the mod still mines, but far ships may stop; update MSCore first.
+- Fixed: the Mining Unit window keybinds keep working if a game update renames the window toggle.
+
 ## 0.2.18
 
 - Fixed: ships being destroyed for no visible reason. Two ships could pick the same rock and keep ramming each other. A rock is now taken by one ship at a time.
