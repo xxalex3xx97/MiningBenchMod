@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.22
+
+- Needs MSCore 0.8.12 (update MSCore first).
+- **Mining beams no longer hurt your own ships.** The mining laser damages any ship in its beam, which looked like ships dying with no attacker. A mining ship now holds its laser while another ship is within 300 m, and gives up that rock after 15 s and picks another. Other ships' flight plans treat a mining ship as a 300 m no-go zone, and ships do not pick rocks inside it.
+- **Fleeing works.** A ship hit with no attacker now really flees: it is no longer stopped a moment after it starts, it flies to a parking dock like a normal trip, and the log line reads "Fleeing: ..." instead of a red ERROR.
+- **Shield and hull log** now shows the real shield values.
+- **Fixed** "dock job already running for this ship" when a dock was granted while the ship was still flying to a parking dock.
+- Not run in game yet: the shield value line during a fight.
+
 ## 0.2.21
 
 - **Misc docks.** New "Misc docks" list in the F4 Ship tab. Anything a ship carries that has no dock of its own (non-ore items, or ores with an empty dock list) is unloaded at a misc dock, always after the ore docks. Name a dock `[MISC]` to add it automatically.
