@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.20
+
+- Needs MSCore 0.8.11 (update MSCore first).
+- **Dock tags:** name a dock with the ore in square brackets, capitals, e.g. `[TITANIUM]`, `[NICKEL]`, `[SILICA]`. The dock is added first to that ore's unload list of every ship, and shows in the Ship tab already selected and locked (it cannot be removed unless you rename the dock without the tag). Docks you pick by hand come after them.
+- **[AUTO-FILTER]:** a dock with `[AUTO-FILTER]` and one ore tag gets its filter set to that ore on every port.
+- **[MISC]:** a dock named `[MISC]` takes anything that has no ore dock of its own (not filtered; not tested in game yet).
+- One ore tag per dock only. A dock with two or more ore tags is ignored (one log line names it).
+- Fixed: a crash when the Mining Unit window and the dev menu were opened in turn.
+- The mining ships' sector and rock lookups use MSCore's class names, so a game update that renames them needs only an MSCore fix.
+
 ## 0.2.19
 
 - Needs MSCore 0.8.7: ships far from you are now kept loaded by MSCore, so a game update that moves its internals no longer breaks far mining inside this mod. With an older MSCore the mod still mines, but far ships may stop; update MSCore first.
