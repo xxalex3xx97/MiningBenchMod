@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.21
+
+- **Misc docks.** New "Misc docks" list in the F4 Ship tab. Anything a ship carries that has no dock of its own (non-ore items, or ores with an empty dock list) is unloaded at a misc dock, always after the ore docks. Name a dock `[MISC]` to add it automatically.
+- **Parking docks and a Park button.** Name a dock `[PARKING]` (or add one in the new Parking docks list). Ships park there after Stop loop, when they have nothing to do, while waiting in a dock queue (they keep their place) and after a flee. New **Park** button in the Actions box. EMERGENCY STOP still freezes the ship.
+- **Refuel tags.** Name a dock `[REFUEL]` to make it a refuel dock, plus `[HYDROGEN]`, `[DEUTERIUM]` and/or `[WARP]` for the fuels it supplies (none = all). A ship picks a refuel dock that has the fuel it needs.
+- **Ship name tags.** Put `[TITANIUM]` in a ship's name and it mines titanium until the cargo is full; `[TITANIUM:200]` mines 200. Several tags make an ordered queue (`[NICKEL:100] [TITANIUM:50]`). `[ICE]` works for water ice. Editing the Items tab now rewrites these tags in the ship's name, so the name always shows what the ship does.
+- **Items tab.** In All ships or a fleet, ships are grouped by ore with counts; an edit applies to that group only. New presets: save a queue under a name and apply it to a ship, a group or all ships.
+- **New window layout.** Dock cards are collapsible with the Add dock button in the header and a `?` button that explains the name tags. Dock rows show how many ships use them. The Docks tab groups docks by type, the Log tab has one collapsible card per ship, grouped by fleet. Docks you pick by hand are grouped too.
+- **Fixed** the game hanging while a save was loading with ships mining.
+
 ## 0.2.20
 
 - Needs MSCore 0.8.11 (update MSCore first).
