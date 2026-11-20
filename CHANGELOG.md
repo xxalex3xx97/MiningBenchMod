@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.1
+
+- **Needs ShipControl 0.3.0 and MSCore 0.8.13 (0.8.14 recommended).** Update MSCore first (Check, then Update selected), then update Mining Unit.
+- **Works with the 2026-11-20 game update.** The game crashed at start with "Bad export index" on BP_MiningMod; the Mining Unit block files are rebuilt for the new game. Update this mod before starting the game.
+- **Pausing the game no longer breaks a ship's trip.** Opening the pause menu right after Park or a dock command used to end the trip with "clear timeout". The wait now stops while the game is paused (needs MSCore 0.8.14; with older MSCore it works as before). Pauses longer than about 90 s can still fail the trip.
+- Fixed: the log group rows in the window now fill in, and the error spam in the log is gone.
+
 ## 0.3.0
 
 - **Needs ShipControl 0.3.0 and MSCore 0.8.13.** MSCore Manager installs ShipControl for you: update MSCore first (Check, then Update selected), then add or update Mining Unit. Without ShipControl, Start loop and Collect ore refuse with "ShipControl not installed or too old (needs API 4); update MSCore Manager" and nothing starts.
