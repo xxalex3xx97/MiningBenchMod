@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- **Needs ShipControl 0.3.0 and MSCore 0.8.13.** MSCore Manager installs ShipControl for you: update MSCore first (Check, then Update selected), then add or update Mining Unit. Without ShipControl, Start loop and Collect ore refuse with "ShipControl not installed or too old (needs API 4); update MSCore Manager" and nothing starts.
+- **Ship movement moved into ShipControl.** Speed watch, flying to a rock, steering, braking before rocks and other ships' no-go zones now run in the shared ShipControl mod. Miners approach, mine, reroute and brake as before.
+- **Smaller, tidier window.** All texts use the compact Fleet sizes, and the gold bar under the Fleet Control, Control, Actions and Status headers is as thick as the main header.
+- Not run in game yet: a far warp with its landing wait.
+
 ## 0.2.22
 
 - Needs MSCore 0.8.12 (update MSCore first).
