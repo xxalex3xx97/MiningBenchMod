@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.2
+
+- **Needs MSCore 0.8.15 and ShipControl 0.3.0 or newer (0.4.0 works).** Update MSCore first (Check, then Update selected), then update Mining Unit.
+- **A mining ship needs the Mining Bench block AND a mining laser.** A ship without a mining laser drops out of the mining list after a few bad checks in a row, and a running loop on it stops with "no mining laser". If the laser cannot be read, the ship keeps working with the bench alone.
+- **Asteroid list is shared.** The rock registry now comes from MSCore, one shared scan for all mods. Mods/MSCore/rockreg holds its cache. The old MiningRegistryCache.bin is no longer used and can be deleted.
+- Removing the mod through MSCore Manager can now clean the Mining Unit out of your saves. The asteroid list and the save clean-up were tested in game with MSCore 0.8.15, including the manager Remove and Disable.
+
 ## 0.3.1
 
 - **Needs ShipControl 0.3.0 and MSCore 0.8.13 (0.8.14 recommended).** Update MSCore first (Check, then Update selected), then update Mining Unit.
