@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.3
+
+- **New:** station safe bubble. Mining ships stay out of a radius around your own stations (default 2000 m): they skip rocks inside it and the mining laser holds off while a ship is inside. Set it in the Mining window, Operation tab, Mining card: "Station safe radius (m)" (0 = off). Needs MSCore 0.9.4.
+- **Changed:** "Dock at" now just docks: no ore-list check, never turns into a refuel, nothing is unloaded, and the ship stays until you tell it to leave.
+- **Changed:** pressing Refuel or Unload with no dock configured sends the ship to a parking dock; with none free it errors as before.
+- **Fixed:** the ship picker refreshes its list while open, and redraws when a ship is renamed.
+- **Changed:** far less log spam (dock dump, per-ship cargo and fuel lines only show in debug mode).
+- Not yet run in game beyond the author's test of the bubble, Dock at and the Mining window field.
+
 ## 0.3.2
 
 - **Needs MSCore 0.8.15 and ShipControl 0.3.0 or newer (0.4.0 works).** Update MSCore first (Check, then Update selected), then update Mining Unit.
